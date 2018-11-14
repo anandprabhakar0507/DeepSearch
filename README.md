@@ -17,6 +17,7 @@ $ python3 deepsearch.py
 Usage
 --
 > Basic
+
 `python3 deepsearch.py -u http://testphp.vulnweb.com/ -e php -w wordlist.txt`
 
 `python3 deepsearch.py -u http://testphp.vulnweb.com/ -e php -w wordlist.txt -f`
