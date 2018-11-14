@@ -17,6 +17,8 @@ $ python3 deepsearch.py
 Screenshots
 --
 
+![screen_2](https://raw.githubusercontent.com/m4ll0k/DeepSearch/master/screen2.png)
+
 
 Usage
 --
