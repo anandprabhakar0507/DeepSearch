@@ -61,6 +61,7 @@ __URL Injection Point (%%):__
 __URL Parameters Injection:__
 
 `python3 deepsearch.py -u http://testphp.vulnweb.com/index.php?id=%2%&user=1 -e php -w wordlist.txt`
+
 `python3 deepsearch.py -u http://testphp.vulnweb.com/index.php?%id%=1&user=2 -e php -w wordlist.txt`
 
 __Add Headers:__
