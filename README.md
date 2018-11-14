@@ -14,6 +14,10 @@ $ python3 deepsearch.py
 
 ```
 
+Screenshots
+--
+
+
 Usage
 --
  __Basic:__
@@ -63,3 +67,7 @@ __Proxy:__
 __URLs by list:__
 
 `python3 deepsearch.py -U my_urls.txt -e php -w wordlist.txt`
+
+__Other Options:__
+
+`python3 deepsearch.py -u http://testphp.vulnweb.com/ -e php -w wordlist.txt -t 10 -T 3 -d 2 -R -c "test=test" --random-agent`
