@@ -454,8 +454,10 @@ def main():
 			ThreadPool = concurrent.futures.ThreadPoolExecutor(int(kwargs['threads']))
 			thread = (ThreadPool.submit(Fuzzer(kwargs).fuzzer,u,w) for w in words)
 			for i,_ in enumerate(concurrent.futures.as_completed(thread)):
-				print('%s'%(words[i].decode('utf-8')),end='\r')
-				print('%s'%(' '*len(words[i].decode('utf-8'))),end='\r')
+				space = ' '*len(words[i].decode('utf-8'))
+				sys.stdout.write('\r\r%s%s\r\r'%(words[i].decode('utf-8'),space))
+				sys.stdout.flush()
+				space = None
 				_.result()
 		except KeyboardInterrupt as e:
 			sys.exit(0)
